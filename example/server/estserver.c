@@ -2281,6 +2281,7 @@ int main (int argc, char **argv)
             
             strncpy(realm, optarg, MAX_REALM_LEN);
             break;
+#if 0
         case 'f':
             /* turn FIPS on if user requested it
              * and exit if failure.
@@ -2295,7 +2296,8 @@ int main (int argc, char **argv)
             }
             ;
             break;
-        default:
+#endif
+    default:
             show_usage_and_exit();
             break;
         }

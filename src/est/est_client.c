@@ -3145,6 +3145,14 @@ EST_ERROR est_client_set_uid_pw (EST_CTX *ctx, const char *uid, const char *pwd)
     return (EST_ERR_NONE);
 }
 
+int FIPS_mode()
+{
+  return 0;
+}
+int FIPS_mode_set()
+{
+  return 0;
+}
 /*
  * Application API
  */
